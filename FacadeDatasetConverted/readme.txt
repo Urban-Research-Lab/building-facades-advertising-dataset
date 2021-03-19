@@ -20,6 +20,8 @@ wandb: (3) Don't visualize my results
 
 Сервис https://www.wandb.com/ каким-то образом позволяет онлайн отслеживать процесс и результат обучения.
 
+Для работы на видеокарте потребуется карта от NVidia и установленная CUDA https://developer.nvidia.com/cuda-downloads?
+
 1. Создание "имя_датасета".yaml.
 Файл должен лежать в директории yolov5/data/"имя_датасета".yaml. Наш файл FacadeDatasetConverted.yaml (приложен в архиве) имеет следующий вид:
 
@@ -47,6 +49,7 @@ https://gist.github.com/Amir22010/a99f18ca19112bc7db0872a36a03a1ec
 Директории должны быть организованы следующим образом:
 --yolov5
 	--data
+	       --FacadeDatasetConverted.yaml
 	--inference
 	...
 --FacadeDatasetConverted
